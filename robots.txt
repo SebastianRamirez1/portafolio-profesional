@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sebastianramirezportfolio.netlify.app/sitemap.xml

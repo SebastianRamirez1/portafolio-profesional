@@ -1,0 +1,15 @@
+{
+  "name": "Sebastián Ramírez | Java Backend Junior",
+  "short_name": "Sebastian SR",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f2ede3",
+  "theme_color": "#0f766e",
+  "icons": [
+    {
+      "src": "/assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
