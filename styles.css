@@ -372,16 +372,72 @@ h3 {
 }
 
 .checklist,
-.project-points {
+.project-points,
+.project-stack {
   padding-left: 18px;
   margin: 16px 0 0;
   color: var(--muted);
 }
 
 .checklist li,
-.project-points li {
+.project-points li,
+.project-stack li {
   margin-bottom: 10px;
   line-height: 1.55;
+}
+
+.project-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.project-stack li {
+  margin: 0;
+  padding: 9px 12px;
+  border-radius: var(--radius-pill);
+  background: rgba(255, 255, 255, 0.74);
+  border: 1px solid rgba(24, 22, 20, 0.08);
+  color: var(--accent-dark);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.project-note {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+
+.project-links {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+.project-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 16px;
+  border-radius: var(--radius-pill);
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid var(--line);
+  font-weight: 700;
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease;
+}
+
+.project-links a:hover {
+  transform: translateY(-2px);
+  color: var(--accent-dark);
+  border-color: rgba(15, 118, 110, 0.2);
 }
 
 .stack-grid {
