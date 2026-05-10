@@ -1,38 +1,24 @@
 # Portafolio profesional
 
-Sitio estático listo para producción, enfocado en presentar el perfil profesional de **Sebastián Ramírez** para oportunidades como `Java Backend Junior`.
+Sitio estático de **Sebastián Ramírez**, desarrollador backend Java con proyectos en Spring Boot, PostgreSQL y APIs REST.
 
-## Incluye
+## Archivos
 
-- Landing profesional en español con enfoque en reclutamiento
-- SEO básico y metadatos sociales (`Open Graph` y `Twitter`)
-- Datos estructurados `JSON-LD`
-- `robots.txt`, `sitemap.xml` y `site.webmanifest`
-- Favicon y portada social en SVG
-- Hoja de vida enlazada para descarga
-- Configuración básica de despliegue para Netlify y Vercel
-
-## Archivos principales
-
-- `index.html`: estructura principal del portafolio
-- `styles.css`: estilos, responsive y accesibilidad visual
-- `script.js`: detalles mínimos de interfaz
-- `assets/Sebastian-Ramirez-CV.pdf`: hoja de vida enlazada
-- `assets/favicon.svg`: icono del sitio
-- `assets/og-cover.svg`: imagen social para compartir
-- `netlify.toml`: headers y caché para Netlify
-- `vercel.json`: headers para Vercel
+- `index.html` — estructura principal del portafolio
+- `styles.css` — estilos, responsive y accesibilidad visual
+- `script.js` — detalle mínimo de interfaz (año dinámico en footer)
+- `assets/Sebastian-Ramirez-CV.pdf` — CV enlazado para descarga
+- `assets/favicon.svg` — icono del sitio
+- `assets/og-cover.svg` — imagen social para compartir
+- `assets/sebastian-profile.png` — foto de perfil
+- `netlify.toml` — headers de seguridad y caché para Netlify
+- `robots.txt` y `sitemap.xml` — SEO
+- `site.webmanifest` — soporte de PWA básico
 
 ## Abrir localmente
 
-Puedes abrir `index.html` directamente en el navegador.
+Abre `index.html` directamente en el navegador. No requiere build ni dependencias.
 
-## Publicar
+## Publicar en Netlify
 
-### Netlify
-
-Sube la carpeta completa o conecta el repositorio. No requiere comando de build.
-
-### Vercel
-
-Importa el proyecto como sitio estático. No requiere framework ni build command adicional.
+Sube la carpeta completa o conecta el repositorio. No requiere build command.
