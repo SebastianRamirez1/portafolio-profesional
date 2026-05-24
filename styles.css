@@ -21,6 +21,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 82px;
 }
 
 body {
@@ -136,6 +137,10 @@ h3 {
 
 .nav a:hover {
   color: var(--text);
+}
+
+.nav a.is-active {
+  color: var(--accent-dark);
 }
 
 .hero {
@@ -319,7 +324,57 @@ h3 {
 }
 
 .section {
-  padding: 48px 0 0;
+  padding: 56px 0 0;
+}
+
+/* Quick stats strip between hero and projects */
+.stat-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border-radius: var(--radius-pill);
+  overflow: hidden;
+  border: 1px solid var(--line);
+}
+
+.stat-strip li {
+  flex: 1 1 auto;
+  padding: 14px 20px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+  border-right: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.03);
+  white-space: nowrap;
+}
+
+.stat-strip li:last-child {
+  border-right: none;
+}
+
+.stat-strip strong {
+  display: block;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--accent-dark);
+  line-height: 1.1;
+  margin-bottom: 2px;
+}
+
+/* Availability indicator dot */
+.status-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #4ade80;
+  margin-right: 8px;
+  flex-shrink: 0;
+  box-shadow: 0 0 0 3px rgba(74, 222, 128, 0.22);
+  animation: pulse-dot 2.5s ease-in-out infinite;
 }
 
 .section-heading {
@@ -398,8 +453,8 @@ h3 {
   margin: 0;
   padding: 9px 12px;
   border-radius: var(--radius-pill);
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.09);
+  border: 1px solid rgba(255, 255, 255, 0.13);
   color: var(--text);
   font-size: 0.9rem;
   font-weight: 700;
@@ -448,13 +503,23 @@ h3 {
 .stack-card {
   min-height: 188px;
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.7)),
+    linear-gradient(180deg, rgba(94, 231, 255, 0.07), rgba(94, 231, 255, 0.02)),
     var(--surface);
+  transition: transform 200ms ease, border-color 200ms ease;
+}
+
+.stack-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(94, 231, 255, 0.22);
 }
 
 .timeline {
   display: grid;
   gap: 18px;
+}
+
+.timeline-item {
+  box-shadow: var(--shadow), inset 3px 0 0 rgba(94, 231, 255, 0.28);
 }
 
 .timeline-place {
@@ -466,7 +531,7 @@ h3 {
 }
 
 .projects-grid {
-  grid-template-columns: 1.6fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .project-card {
@@ -474,7 +539,7 @@ h3 {
 }
 
 .main-project {
-  grid-row: 1 / span 2;
+  grid-column: 1 / -1;
 }
 
 .project-date {
@@ -491,7 +556,7 @@ h3 {
 
 .featured-project {
   background:
-    linear-gradient(180deg, rgba(15, 118, 110, 0.11), rgba(255, 255, 255, 0.62)),
+    linear-gradient(180deg, rgba(94, 231, 255, 0.08), rgba(15, 118, 110, 0.07)),
     var(--surface);
 }
 
@@ -522,6 +587,7 @@ h3 {
 
 .contact-links a {
   font-weight: 700;
+  overflow-wrap: break-word;
 }
 
 .contact-links a:hover {
@@ -532,6 +598,20 @@ h3 {
   grid-column: 1 / -1;
   padding-top: 8px;
   border-top: 1px solid var(--line);
+}
+
+/* Panel subtle interactive feedback */
+.panel {
+  transition: border-color 250ms ease;
+}
+
+.panel:hover {
+  border-color: rgba(94, 231, 255, 0.17);
+}
+
+@keyframes pulse-dot {
+  0%, 100% { box-shadow: 0 0 0 3px rgba(74, 222, 128, 0.22); }
+  50% { box-shadow: 0 0 0 6px rgba(74, 222, 128, 0.08); }
 }
 
 @keyframes rise {
@@ -557,6 +637,11 @@ h3 {
     animation: none !important;
     transition: none !important;
   }
+
+  .status-dot {
+    animation: none !important;
+    box-shadow: 0 0 0 3px rgba(74, 222, 128, 0.28);
+  }
 }
 
 @media (max-width: 980px) {
@@ -570,7 +655,7 @@ h3 {
   }
 
   .main-project {
-    grid-row: auto;
+    grid-column: auto;
   }
 
   .hero h1,
@@ -586,6 +671,25 @@ h3 {
 }
 
 @media (max-width: 720px) {
+  .stat-strip {
+    border-radius: var(--radius-lg);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .stat-strip li {
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .stat-strip li:nth-child(2n) {
+    border-right: none;
+  }
+
+  .stat-strip li:nth-last-child(-n+2) {
+    border-bottom: none;
+  }
+
   .page-shell {
     width: min(100% - 18px, 1160px);
     padding-top: 12px;

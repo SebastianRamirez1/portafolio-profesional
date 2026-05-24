@@ -6,7 +6,7 @@
     <title>Sebastián Ramírez | Desarrollador Backend</title>
     <meta
       name="description"
-      content="Portafolio de Sebastián Ramírez, desarrollador backend con proyectos en Spring Boot, PostgreSQL, Docker y APIs REST. Disponible para roles junior en Medellín."
+      content="Portafolio de Sebastián Ramírez, desarrollador backend con proyectos en Java, Python y Node.js: IA con FastAPI, APIs REST, Clean Architecture, Docker y CI/CD. Disponible para roles junior en Medellín."
     />
     <meta
       name="keywords"
@@ -56,7 +56,8 @@
         "telephone": "+57 3002791360",
         "url": "https://sebastianramirezportfolio.netlify.app/",
         "sameAs": [
-          "https://github.com/SebastianRamirez1"
+          "https://github.com/SebastianRamirez1",
+          "https://www.linkedin.com/in/sebastian-ramirez-acevedo-2580ab2a5/"
         ],
         "address": {
           "@type": "PostalAddress",
@@ -73,7 +74,7 @@
             "name": "SENA"
           }
         ],
-        "knowsAbout": ["Java", "Spring Boot", "PostgreSQL", "MySQL", "SQL", "Docker", "JUnit", "REST APIs", "Git", "JDBC", "Maven"]
+        "knowsAbout": ["Java", "Spring Boot", "Python", "FastAPI", "Node.js", "TypeScript", "Fastify", "PostgreSQL", "Redis", "Docker", "GitHub Actions", "CI/CD", "REST APIs", "Clean Architecture", "JUnit", "pytest", "Vitest", "Git", "Maven"]
       }
     </script>
   </head>
@@ -95,13 +96,14 @@
       <main id="contenido">
         <section class="hero" id="inicio">
           <div class="hero-copy">
-            <p class="eyebrow">Disponible ahora · Medellín / Remoto</p>
-            <h1>Desarrollador Backend con proyectos reales en APIs REST, bases de datos relacionales y Docker.</h1>
+            <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span>Disponible ahora · Medellín / Remoto</p>
+            <h1>Desarrollador Backend con proyectos en IA, APIs REST, arquitectura limpia y automatización real.</h1>
             <p class="lead">
               Soy <strong>Sebastián Ramírez</strong>, desarrollador backend con práctica profesional
-              en la Federación Antioqueña de ONG y tres proyectos propios que demuestran diseño de
-              <strong>APIs REST, persistencia en PostgreSQL y MySQL, testing con JUnit y contenerización con Docker</strong>.
-              Stack principal en Java y Spring Boot. Busco un rol junior donde aportar desde el primer día.
+              en la Federación Antioqueña de ONG y cuatro proyectos propios: automatización con
+              <strong>IA y WhatsApp</strong>, un portal institucional con <strong>Node.js, Redis y 140+ tests</strong>,
+              una API médica con <strong>Clean Architecture y CI/CD</strong>, y un sistema financiero con
+              <strong>Spring Boot y Docker</strong>. Busco un rol junior donde aportar desde el primer día.
             </p>
 
             <div class="hero-actions">
@@ -118,7 +120,7 @@
             </div>
 
             <ul class="hero-highlights" aria-label="Datos destacados">
-              <li>APIs REST · Bases de datos relacionales · Docker · Testing</li>
+              <li>IA · APIs REST · Clean Architecture · CI/CD · Docker</li>
               <li>Práctica profesional en desarrollo y mantenimiento</li>
               <li>Disponibilidad inmediata · Tiempo completo</li>
             </ul>
@@ -139,8 +141,8 @@
               <p class="card-label">Rol objetivo</p>
               <h2>Desarrollador Backend Junior</h2>
               <p>
-                Diseño APIs REST, manejo bases de datos relacionales, aplico pruebas unitarias y contenerizo con Docker.
-                Stack principal en Java — abierto a otros lenguajes y entornos backend.
+                Construyo backends con Java y Python: APIs REST, integración con IA, arquitectura limpia,
+                testing y CI/CD. Abierto a cualquier stack backend.
               </p>
 
               <dl class="facts">
@@ -165,6 +167,13 @@
           </aside>
         </section>
 
+        <ul class="stat-strip" aria-label="Números clave">
+          <li><strong>4</strong> proyectos en GitHub</li>
+          <li><strong>3</strong> lenguajes backend</li>
+          <li><strong>140+</strong> tests escritos</li>
+          <li><strong>6 meses</strong> práctica profesional</li>
+        </ul>
+
         <section class="section" id="proyectos">
           <div class="section-heading">
             <p class="eyebrow">Proyectos</p>
@@ -175,11 +184,100 @@
             <article class="project-card featured-project main-project">
               <p class="project-tag">Proyecto principal</p>
               <span class="project-date">Mayo 2025</span>
+              <h3>Automatización de pedidos por WhatsApp con IA</h3>
+              <p>
+                Backend que elimina la gestión manual de pedidos para negocios que reciben órdenes por WhatsApp.
+                La IA interpreta los mensajes, registra los pedidos y envía confirmaciones sin intervención humana.
+              </p>
+              <ul class="project-stack" aria-label="Tecnologías utilizadas en el proyecto">
+                <li>Python 3.11</li>
+                <li>FastAPI</li>
+                <li>PostgreSQL</li>
+                <li>OpenAI GPT-4o</li>
+                <li>Meta Cloud API</li>
+                <li>Docker</li>
+                <li>Railway</li>
+              </ul>
+              <ul class="project-points">
+                <li>IA que interpreta mensajes de clientes y extrae pedidos automáticamente</li>
+                <li>Máquina de estados: recibido → confirmado → preparación → despachado → entregado</li>
+                <li>API de administración con autenticación JWT, filtros y estadísticas de dashboard</li>
+                <li>Webhooks validados con HMAC-SHA256 y cobertura de pruebas end-to-end</li>
+              </ul>
+              <p class="project-note">
+                Proyecto desplegado en Railway con Docker. Integra IA generativa en un flujo de negocio real y automatizable.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/SebastianRamirez1/proyecto_whatsapp_automatizacion" target="_blank" rel="noopener noreferrer">Ver código</a>
+                <a href="https://github.com/SebastianRamirez1/proyecto_whatsapp_automatizacion#readme" target="_blank" rel="noopener noreferrer">Ver README</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <p class="project-tag">Proyecto destacado</p>
+              <span class="project-date">Mayo 2025</span>
+              <h3>Portal de Bienestar ITM — API + Frontend</h3>
+              <p>
+                API centralizada para los servicios de bienestar del ITM: cafetería, salud mental,
+                biblioteca, eventos y alertas. Reemplaza plataformas dispersas con un único punto de acceso.
+              </p>
+              <ul class="project-stack" aria-label="Tecnologías utilizadas en el proyecto">
+                <li>Node.js 20</li>
+                <li>Fastify 5</li>
+                <li>TypeScript</li>
+                <li>PostgreSQL</li>
+                <li>Redis</li>
+                <li>React 18</li>
+                <li>Railway / Vercel</li>
+              </ul>
+              <ul class="project-points">
+                <li>7 módulos: autenticación dual (JWT + API Keys), caché con Redis, scraping automático de eventos</li>
+                <li>140+ tests con Vitest y cobertura V8; webhooks firmados con HMAC-SHA256</li>
+                <li>Frontend en React + TypeScript + TanStack Query con roles admin/usuario</li>
+                <li>Deploy con CI/CD: Railway (backend) + Vercel (frontend)</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/SebastianRamirez1/proyecto_itm_bienestar" target="_blank" rel="noopener noreferrer">Ver API</a>
+                <a href="https://github.com/SebastianRamirez1/proyecto_itm_bienestar_frontend" target="_blank" rel="noopener noreferrer">Ver Frontend</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <p class="project-tag">Proyecto clave</p>
+              <span class="project-date">Marzo 2025</span>
+              <h3>API REST de turnos médicos — Clean Architecture</h3>
+              <p>
+                Sistema de gestión de citas médicas con arquitectura limpia en 4 capas, reglas de negocio
+                validadas, documentación automática con Swagger y pipeline CI/CD completo.
+              </p>
+              <ul class="project-stack" aria-label="Tecnologías utilizadas en el proyecto">
+                <li>Java 17</li>
+                <li>Spring Boot 3.3</li>
+                <li>PostgreSQL 16</li>
+                <li>OpenAPI / Swagger</li>
+                <li>Docker</li>
+                <li>GitHub Actions</li>
+                <li>Render</li>
+              </ul>
+              <ul class="project-points">
+                <li>Clean Architecture: presentación → aplicación → dominio → infraestructura</li>
+                <li>Reglas de negocio: sin solapamientos, cancelación con 2h de anticipación, soft delete</li>
+                <li>Documentación automática con OpenAPI 3 / Swagger UI</li>
+                <li>CI/CD con GitHub Actions y deploy automático en Render</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/SebastianRamirez1/proyecto_turnos_medicos" target="_blank" rel="noopener noreferrer">Ver código</a>
+                <a href="https://github.com/SebastianRamirez1/proyecto_turnos_medicos#readme" target="_blank" rel="noopener noreferrer">Ver README</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <p class="project-tag">Proyecto clave</p>
+              <span class="project-date">Enero 2025</span>
               <h3>Sistema de gestión para distribuidora de huevos</h3>
               <p>
-                Backend completo para una distribuidora real: gestión de ventas, inventario en tiempo real,
-                precios dinámicos, cuentas corrientes (fiado) y reportes diarios de caja. Diseño orientado
-                al dominio con lógica de negocio separada de la infraestructura.
+                Backend con lógica de negocio real: ventas, inventario en tiempo real, precios dinámicos,
+                cuentas corrientes (fiado) y reportes de caja. Diseño orientado al dominio.
               </p>
               <ul class="project-stack" aria-label="Tecnologías utilizadas en el proyecto">
                 <li>Java 17</li>
@@ -191,64 +289,14 @@
                 <li>Maven</li>
               </ul>
               <ul class="project-points">
-                <li>Dos tipos de clientes: precio público y precios especiales con descuentos por volumen</li>
-                <li>Registro de ventas con múltiples medios de pago: efectivo, transferencia y fiado</li>
+                <li>Dos tipos de clientes con precios diferenciados y descuentos por volumen</li>
+                <li>Múltiples medios de pago: efectivo, transferencia y fiado</li>
                 <li>Control de stock en tiempo real con bloqueo de sobreventa</li>
-                <li>Sistema de crédito con seguimiento de cuentas corrientes y abonos parciales</li>
+                <li>Pruebas unitarias con JUnit 5 y Mockito; BigDecimal para precisión monetaria</li>
               </ul>
-              <p class="project-note">
-                Proyecto con lógica de negocio real, uso de BigDecimal para cálculos monetarios precisos y
-                pruebas unitarias con JUnit 5 y Mockito.
-              </p>
               <div class="project-links">
                 <a href="https://github.com/SebastianRamirez1/proyecto_distribuidora" target="_blank" rel="noopener noreferrer">Ver código</a>
                 <a href="https://github.com/SebastianRamirez1/proyecto_distribuidora#readme" target="_blank" rel="noopener noreferrer">Ver README</a>
-              </div>
-            </article>
-
-            <article class="project-card featured-project">
-              <p class="project-tag">Proyecto clave</p>
-              <span class="project-date">Marzo 2025</span>
-              <h3>API REST de inventario con Spring Boot</h3>
-              <p>
-                Backend desarrollado con Java y Spring Boot para gestionar productos y categorías mediante endpoints REST.
-                Incluye persistencia en MySQL, validaciones básicas y documentación de pruebas con Postman.
-              </p>
-              <ul class="project-stack" aria-label="Tecnologías utilizadas en el proyecto">
-                <li>Java 17</li>
-                <li>Spring Boot</li>
-                <li>Spring Data JPA</li>
-                <li>MySQL</li>
-                <li>Maven</li>
-              </ul>
-              <ul class="project-points">
-                <li>CRUD de productos con relación producto-categoría</li>
-                <li>Endpoints REST para gestión completa de inventario</li>
-                <li>Pruebas documentadas con Postman y README con endpoints</li>
-              </ul>
-              <div class="project-links">
-                <a href="https://github.com/SebastianRamirez1/api-rest-inventario" target="_blank" rel="noopener noreferrer">Ver código</a>
-                <a href="https://github.com/SebastianRamirez1/api-rest-inventario#readme" target="_blank" rel="noopener noreferrer">Ver README</a>
-              </div>
-            </article>
-
-            <article class="project-card featured-project">
-              <p class="project-tag">Proyecto recomendado</p>
-              <span class="project-date">Diciembre 2024</span>
-              <h3>Sistema de gestión de clientes con Java, JDBC y MySQL</h3>
-              <p>
-                Aplicación de consola para gestionar clientes con operaciones CRUD conectadas a MySQL mediante JDBC.
-                Consultas parametrizadas con PreparedStatement y estructura organizada por capas.
-              </p>
-              <ul class="project-stack" aria-label="Tecnologías utilizadas en el proyecto">
-                <li>Java</li>
-                <li>JDBC</li>
-                <li>MySQL</li>
-                <li>Maven</li>
-              </ul>
-              <div class="project-links">
-                <a href="https://github.com/SebastianRamirez1/gestion-clientes-jdbc" target="_blank" rel="noopener noreferrer">Ver código</a>
-                <a href="https://github.com/SebastianRamirez1/gestion-clientes-jdbc#readme" target="_blank" rel="noopener noreferrer">Ver README</a>
               </div>
             </article>
           </div>
@@ -263,19 +311,19 @@
           <div class="stack-grid">
             <article class="stack-card">
               <h3>Backend</h3>
-              <p>Java 17, Spring Boot 3, Spring Data JPA, JDBC, lógica de negocio y APIs REST.</p>
+              <p>Java 17 + Spring Boot 3, Python 3 + FastAPI, Node.js 20 + Fastify 5 + TypeScript. APIs REST y arquitectura modular.</p>
             </article>
             <article class="stack-card">
               <h3>Bases de datos</h3>
-              <p>PostgreSQL, MySQL, consultas relacionales, migraciones y manejo de transacciones.</p>
+              <p>PostgreSQL, MySQL, consultas relacionales, migraciones con Alembic y manejo de transacciones.</p>
             </article>
             <article class="stack-card">
               <h3>Testing y DevOps</h3>
-              <p>JUnit 5, Mockito, Docker, Docker Compose, Maven y control de versiones con Git.</p>
+              <p>JUnit 5, Mockito, pytest, Vitest (140+ tests). Docker, GitHub Actions, Railway, Render y Vercel.</p>
             </article>
             <article class="stack-card">
-              <h3>Herramientas</h3>
-              <p>Postman, IntelliJ IDEA, GitHub y documentación técnica de endpoints y procesos.</p>
+              <h3>Integraciones</h3>
+              <p>OpenAI API, Meta Cloud API, Redis, Prisma ORM, JWT, webhooks HMAC-SHA256, Swagger y Zod.</p>
             </article>
           </div>
         </section>
@@ -323,11 +371,12 @@
         <section class="section" id="perfil">
           <div class="section-heading">
             <p class="eyebrow">Perfil</p>
-            <h2>Práctica profesional, tres proyectos propios y fundamentos sólidos de desarrollo backend.</h2>
+            <h2>Práctica profesional, cuatro proyectos propios y fundamentos sólidos de desarrollo backend.</h2>
           </div>
 
           <div class="grid-two">
             <article class="panel">
+              <h3>Mi trayectoria</h3>
               <p>
                 Cuento con práctica profesional en la Federación Antioqueña de ONG, donde participé en
                 desarrollo, mantenimiento, pruebas y documentación de aplicaciones internas. Eso me dio
@@ -335,20 +384,21 @@
                 dentro de un entorno de software en producción.
               </p>
               <p>
-                Complemento esa experiencia con proyectos propios que aplican conceptos centrales del
-                desarrollo backend: diseño de APIs REST, persistencia en bases de datos relacionales,
-                pruebas unitarias y contenerización con Docker. Stack actual en Java y Spring Boot,
-                con interés en ampliar a otros entornos backend. Formación en ITM y tecnólogo del SENA.
+                Complemento esa experiencia con cuatro proyectos propios: automatización de pedidos por
+                WhatsApp con IA (FastAPI + OpenAI), un portal institucional con Node.js, Redis y 140+ tests,
+                una API médica con Clean Architecture y CI/CD (Spring Boot + GitHub Actions), y un sistema
+                de distribuidora con lógica financiera real. Stack en Java, Python y Node.js. Formación
+                en ITM y tecnólogo del SENA.
               </p>
             </article>
 
             <article class="panel emphasis-panel" id="fortalezas">
               <h3>Lo que traigo al equipo</h3>
               <ul class="checklist">
-                <li>APIs REST diseñadas y documentadas con persistencia en PostgreSQL y MySQL</li>
-                <li>Pruebas unitarias con JUnit 5 y Mockito — no solo código que funciona, sino código verificado</li>
-                <li>Experiencia en desarrollo colaborativo, Git y documentación técnica</li>
-                <li>Fundamentos backend transferibles a cualquier stack: HTTP, SQL, testing, contenedores</li>
+                <li>Integración de IA en flujos de negocio reales (OpenAI + WhatsApp + FastAPI)</li>
+                <li>Arquitectura limpia, CI/CD con GitHub Actions y documentación con OpenAPI/Swagger</li>
+                <li>Testing con JUnit 5, Mockito y pytest — código verificado, no solo funcional</li>
+                <li>Fundamentos backend transferibles a cualquier stack: HTTP, SQL, contenedores, autenticación</li>
               </ul>
             </article>
           </div>
@@ -357,21 +407,21 @@
         <section class="section callout">
           <div>
             <p class="eyebrow">En números</p>
-            <h2>3 proyectos en GitHub · 6 meses de práctica profesional · disponible ahora.</h2>
+            <h2>4 proyectos en GitHub · Java, Python y Node.js · 6 meses de práctica · disponible ahora.</h2>
           </div>
           <p>
-            APIs REST, bases de datos relacionales, Docker y testing aplicados en proyectos reales.
-            Si buscás un desarrollador backend junior con código que mostrar, <a href="#contacto">hablemos</a>.
+            IA, Redis, Clean Architecture, 140+ tests y CI/CD aplicados en proyectos reales.
+            Si buscás un desarrollador backend junior con código que habla por sí solo, <a href="#contacto">hablemos</a>.
           </p>
         </section>
       </main>
 
-      <footer class="footer" id="contacto">
+      <footer class="footer" id="contacto" aria-label="Contacto">
         <div>
           <p class="eyebrow">Contacto</p>
           <h2>Hablemos</h2>
           <p>
-            Disponible para roles junior en desarrollo backend Java. Trabajo presencial o remoto en Medellín.
+            Disponible para roles junior en desarrollo backend. Trabajo presencial o remoto en Medellín.
           </p>
         </div>
 
