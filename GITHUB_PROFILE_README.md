@@ -22,7 +22,7 @@ Desarrollador backend con **6 meses de práctica profesional** en la Federación
 - 🎓 Estudiante de **Ingeniería en Desarrollo de Software** · ITM
 - 🔍 Buscando mi primer rol junior en backend — **disponible ahora**
 - 🤖 Interesado en IA aplicada, APIs REST y arquitectura limpia
-- 📄 [Ver mi hoja de vida](https://sebastianramirezportfolio.netlify.app/assets/Sebastian%20Ramirez%20Acevedo%20CV%20Actualizada.pdf)
+- 📄 [Ver mi hoja de vida](https://sebastianramirezportfolio.netlify.app/assets/Sebastian-Ramirez-CV.pdf)
 
 ---
 
