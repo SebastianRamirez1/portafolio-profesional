@@ -132,6 +132,9 @@ button:focus-visible {
 }
 
 .site-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   color: var(--muted);
   font-size: 0.93rem;
   transition: color 120ms;
@@ -229,7 +232,9 @@ button:focus-visible {
 .btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 6px;
+  min-height: 44px;
   padding: 10px 20px;
   border-radius: var(--radius);
   font-size: 0.95rem;
@@ -583,6 +588,15 @@ button:focus-visible {
 
   .site-nav a {
     font-size: 0.85rem;
+  }
+
+  /* Áreas táctiles ≥44px en mobile (§6.1.7) */
+  .social-links a,
+  .footer-links a,
+  .project-links a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
   }
 
   .profile {
