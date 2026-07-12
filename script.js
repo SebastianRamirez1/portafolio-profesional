@@ -5,7 +5,7 @@ if (year) {
 }
 
 // Nav scroll spy — highlights the active section in the topbar
-const navLinks = document.querySelectorAll(".nav a");
+const navLinks = document.querySelectorAll(".site-nav a");
 const sectionIds = [...navLinks]
   .map((a) => a.getAttribute("href").replace("#", ""))
   .filter(Boolean);
@@ -14,10 +14,20 @@ function updateActiveNav() {
   const scrollY = window.scrollY + 100;
   let current = sectionIds[0];
 
-  for (const id of sectionIds) {
-    const el = document.getElementById(id);
-    if (el && el.offsetTop <= scrollY) {
-      current = id;
+  // Si llegamos al fondo de la página, activar la última sección
+  // (su top puede quedar más abajo de lo que la página puede scrollear).
+  const atBottom =
+    window.innerHeight + window.scrollY >=
+    document.documentElement.scrollHeight - 2;
+
+  if (atBottom) {
+    current = sectionIds[sectionIds.length - 1];
+  } else {
+    for (const id of sectionIds) {
+      const el = document.getElementById(id);
+      if (el && el.offsetTop <= scrollY) {
+        current = id;
+      }
     }
   }
 
