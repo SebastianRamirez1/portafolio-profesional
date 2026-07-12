@@ -6,7 +6,7 @@ ingeniería está en [`docs/DIRECTRICES_INGENIERIA.md`](docs/DIRECTRICES_INGENIE
 ## Qué es este proyecto
 
 Portafolio profesional **estático**: HTML + CSS + JS vanilla, sin framework ni build step.
-Desplegado en Netlify → https://sebastianramirezportfolio.netlify.app/
+Desplegado en Netlify → https://portafolio-profesional-cyan.vercel.app/
 
 - `index.html` — página única, una sola columna
 - `styles.css` — design system con variables CSS (tema oscuro tipo hectorvent.dev)

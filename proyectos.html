@@ -11,17 +11,20 @@
     <meta name="author" content="Sebastián Ramírez" />
     <meta name="theme-color" content="#1d1e20" />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://sebastianramirezportfolio.netlify.app/proyectos.html" />
+    <link rel="canonical" href="https://portafolio-profesional-cyan.vercel.app/proyectos.html" />
 
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="es_CO" />
     <meta property="og:title" content="Proyectos | Sebastián Ramírez" />
     <meta property="og:description" content="Cuatro proyectos reales con IA aplicada, APIs REST, Clean Architecture, Docker y CI/CD." />
-    <meta property="og:url" content="https://sebastianramirezportfolio.netlify.app/proyectos.html" />
-    <meta property="og:image" content="https://sebastianramirezportfolio.netlify.app/assets/og-cover.svg" />
+    <meta property="og:url" content="https://portafolio-profesional-cyan.vercel.app/proyectos.html" />
+    <meta property="og:image" content="https://portafolio-profesional-cyan.vercel.app/assets/og-cover.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
 
     <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
-    <link rel="apple-touch-icon" href="./assets/favicon.svg" />
+    <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png" />
     <link rel="manifest" href="./site.webmanifest" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
@@ -73,6 +76,14 @@
                 <li>Docker</li>
                 <li>Railway</li>
               </ul>
+              <details class="case-study">
+                <summary>Ver detalles técnicos</summary>
+                <div class="case-body">
+                  <p><span class="cs-label">Problema</span> Los negocios que reciben pedidos por WhatsApp los gestionan a mano: es lento, se pierden mensajes y hay errores al transcribir.</p>
+                  <p><span class="cs-label">Decisión técnica clave</span> Modelé el pedido como una máquina de estados (recibido → confirmado → preparación → despachado → entregado) para garantizar transiciones válidas, y validé cada webhook con HMAC-SHA256 para asegurar que las peticiones provienen realmente de Meta.</p>
+                  <p><span class="cs-label">Destacado</span> Interpretación de lenguaje natural con GPT-4o para extraer los pedidos, panel de administración con JWT y despliegue con Docker en Railway.</p>
+                </div>
+              </details>
               <div class="project-links">
                 <a href="https://github.com/SebastianRamirez1/proyecto_whatsapp_automatizacion" target="_blank" rel="noopener noreferrer">Ver código →</a>
                 <a href="https://github.com/SebastianRamirez1/proyecto_whatsapp_automatizacion#readme" target="_blank" rel="noopener noreferrer">README</a>
@@ -99,6 +110,14 @@
                 <li>React 18</li>
                 <li>Railway / Vercel</li>
               </ul>
+              <details class="case-study">
+                <summary>Ver detalles técnicos</summary>
+                <div class="case-body">
+                  <p><span class="cs-label">Problema</span> Los servicios de bienestar del ITM (cafetería, salud mental, biblioteca, eventos) estaban dispersos, sin una API central que los unificara.</p>
+                  <p><span class="cs-label">Decisión técnica clave</span> Añadí una capa de caché con Redis para reducir la latencia en las consultas más frecuentes, y una autenticación dual: JWT para usuarios y API Keys para la comunicación entre servicios.</p>
+                  <p><span class="cs-label">Destacado</span> 7 módulos, 140+ tests con Vitest y un pipeline de CI/CD completo. Cada archivo de test aísla sus datos para poder correr en paralelo sin colisiones.</p>
+                </div>
+              </details>
               <div class="project-links">
                 <a href="https://proyecto-itm-bienestar-frontend.vercel.app/login" target="_blank" rel="noopener noreferrer">Ver demo →</a>
                 <a href="https://github.com/SebastianRamirez1/proyecto_itm_bienestar" target="_blank" rel="noopener noreferrer">Ver API</a>
@@ -126,6 +145,14 @@
                 <li>GitHub Actions</li>
                 <li>Vercel</li>
               </ul>
+              <details class="case-study">
+                <summary>Ver detalles técnicos</summary>
+                <div class="case-body">
+                  <p><span class="cs-label">Problema</span> La gestión de citas médicas tiene reglas de negocio que no se pueden violar: no agendar en horarios ocupados, respetar la disponibilidad del profesional, etc.</p>
+                  <p><span class="cs-label">Decisión técnica clave</span> Apliqué Clean Architecture en 4 capas para que la lógica de dominio no dependa del framework ni de la base de datos, lo que facilita probar las reglas de negocio de forma aislada. La documentación de la API se genera automáticamente con Swagger.</p>
+                  <p><span class="cs-label">Destacado</span> Pipeline de CI/CD con GitHub Actions que corre las pruebas en cada push, y despliegue en Vercel.</p>
+                </div>
+              </details>
               <div class="project-links">
                 <a href="https://proyecto-turnos-medicos.vercel.app/" target="_blank" rel="noopener noreferrer">Ver demo →</a>
                 <a href="https://github.com/SebastianRamirez1/proyecto_turnos_medicos" target="_blank" rel="noopener noreferrer">Ver código</a>
@@ -153,6 +180,14 @@
                 <li>Docker</li>
                 <li>Maven</li>
               </ul>
+              <details class="case-study">
+                <summary>Ver detalles técnicos</summary>
+                <div class="case-body">
+                  <p><span class="cs-label">Problema</span> Una distribuidora maneja ventas, inventario y cuentas corrientes: necesita precisión monetaria exacta y trazabilidad de cada movimiento.</p>
+                  <p><span class="cs-label">Decisión técnica clave</span> Usé BigDecimal en lugar de double para todos los cálculos de dinero y evitar errores de redondeo en precios y saldos, y modelé el dominio con DDD para reflejar las reglas reales del negocio.</p>
+                  <p><span class="cs-label">Destacado</span> Inventario en tiempo real, precios dinámicos, cuentas corrientes y reportes de caja, con pruebas unitarias en JUnit 5 y Mockito.</p>
+                </div>
+              </details>
               <div class="project-links">
                 <a href="https://github.com/SebastianRamirez1/proyecto_distribuidora" target="_blank" rel="noopener noreferrer">Ver código →</a>
                 <a href="https://github.com/SebastianRamirez1/proyecto_distribuidora#readme" target="_blank" rel="noopener noreferrer">README</a>

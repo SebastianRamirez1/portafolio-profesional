@@ -4,11 +4,9 @@
 
 **Desarrollador Backend · Java · Python · Node.js**
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-sebastianramirezportfolio.netlify.app-5ee7ff?style=for-the-badge&logo=netlify&logoColor=white)](https://sebastianramirezportfolio.netlify.app/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-portafolio-profesional-cyan.vercel.app-5ee7ff?style=for-the-badge&logo=netlify&logoColor=white)](https://portafolio-profesional-cyan.vercel.app/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-sebastian--ramirez--acevedo-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sebastian-ramirez-acevedo-2580ab2a5/)
 [![Email](https://img.shields.io/badge/Email-sebastianacevedo123.sra%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sebastianacevedo123.sra@gmail.com)
-
-![Profile views](https://komarev.com/ghpvc/?username=SebastianRamirez1&color=5ee7ff&style=flat-square&label=Visitas+al+perfil)
 
 </div>
 
@@ -22,7 +20,7 @@ Desarrollador backend con **6 meses de práctica profesional** en la Federación
 - 🎓 Estudiante de **Ingeniería en Desarrollo de Software** · ITM
 - 🔍 Buscando mi primer rol junior en backend — **disponible ahora**
 - 🤖 Interesado en IA aplicada, APIs REST y arquitectura limpia
-- 📄 [Ver mi hoja de vida](https://sebastianramirezportfolio.netlify.app/assets/Sebastian-Ramirez-CV.pdf)
+- 📄 [Ver mi hoja de vida](https://portafolio-profesional-cyan.vercel.app/assets/Sebastian-Ramirez-CV.pdf)
 
 ---
 
@@ -129,7 +127,7 @@ Desarrollador backend con **6 meses de práctica profesional** en la Federación
 
 <div align="center">
 
-[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-sebastianramirezportfolio.netlify.app-5ee7ff?style=for-the-badge)](https://sebastianramirezportfolio.netlify.app/)
+[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-portafolio-profesional-cyan.vercel.app-5ee7ff?style=for-the-badge)](https://portafolio-profesional-cyan.vercel.app/)
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sebastian-ramirez-acevedo-2580ab2a5/)
 [![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sebastianacevedo123.sra@gmail.com)

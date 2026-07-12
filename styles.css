@@ -450,6 +450,62 @@ button:focus-visible {
   opacity: 0.75;
 }
 
+/* Case study desplegable por proyecto */
+.case-study {
+  margin: 0 0 14px;
+  border-top: 1px solid var(--border);
+  padding-top: 12px;
+}
+
+.case-study summary {
+  cursor: pointer;
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--accent);
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 40px;
+}
+
+.case-study summary::-webkit-details-marker {
+  display: none;
+}
+
+.case-study summary::before {
+  content: "▸";
+  transition: transform 150ms;
+}
+
+.case-study[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.case-body {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.case-body p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.cs-label {
+  display: block;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text);
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
 /* ── Stack ───────────────────────────────── */
 .stack-grid {
   display: grid;
