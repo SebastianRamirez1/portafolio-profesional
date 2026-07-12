@@ -73,12 +73,13 @@
     <!-- ── Header ────────────────────────────────── -->
     <header class="site-header">
       <div class="header-inner">
-        <a class="site-brand" href="#inicio">Sebastián Ramírez</a>
+        <a class="site-brand" href="index.html">Sebastián Ramírez</a>
         <nav class="site-nav" aria-label="Navegación principal">
-          <a href="#proyectos">Proyectos</a>
-          <a href="#stack">Stack</a>
-          <a href="#experiencia">Experiencia</a>
-          <a href="#contacto">Contacto</a>
+          <a href="sobre-mi.html">Sobre mí</a>
+          <a href="proyectos.html">Proyectos</a>
+          <a href="stack.html">Stack</a>
+          <a href="experiencia.html">Experiencia</a>
+          <a href="contacto.html">Contacto</a>
         </nav>
       </div>
     </header>
@@ -86,8 +87,8 @@
     <!-- ── Main ──────────────────────────────────── -->
     <main id="contenido">
 
-      <!-- Profile -->
-      <section class="profile" id="inicio" aria-label="Perfil">
+      <!-- Profile / hero -->
+      <section class="profile" aria-label="Perfil">
         <div class="avatar-wrap">
           <img
             class="avatar"
@@ -104,7 +105,7 @@
           Disponible ahora · Medellín, Colombia
         </p>
         <div class="profile-actions">
-          <a class="btn btn-primary" href="#contacto">Contactarme</a>
+          <a class="btn btn-primary" href="contacto.html">Contactarme</a>
           <a
             class="btn btn-secondary"
             href="./assets/Sebastian-Ramirez-CV.pdf"
@@ -131,260 +132,58 @@
         </ul>
       </div>
 
-      <!-- About -->
-      <section class="section" id="sobre-mi" aria-labelledby="lbl-sobre-mi">
-        <p class="section-label" id="lbl-sobre-mi" aria-hidden="true">Sobre mí</p>
+      <!-- Intro breve -->
+      <section class="section home-intro" aria-labelledby="lbl-intro">
+        <p class="section-label" id="lbl-intro">Sobre mí</p>
         <p class="bio">
           Desarrollador backend con práctica profesional en la
           <strong>Federación Antioqueña de ONG</strong> y cuatro proyectos propios en GitHub.
           Construyo APIs REST, integro IA en flujos reales de negocio y entrego código con
           pruebas y CI/CD. Stack en <strong>Java, Python y Node.js</strong>.
-          Estudiante de <strong>Ingeniería en Desarrollo de Software</strong> en el ITM,
-          tecnólogo del SENA. Busco mi primer rol junior donde aportar desde el primer día.
+          Busco mi primer rol junior donde aportar desde el primer día.
         </p>
-        <ul class="tags" aria-label="Especialidades">
-          <li>IA aplicada</li>
-          <li>APIs REST</li>
-          <li>Clean Architecture</li>
-          <li>CI/CD</li>
-          <li>Docker</li>
-          <li>Testing</li>
-          <li>Tiempo completo</li>
-        </ul>
       </section>
 
-      <!-- Projects -->
-      <section class="section" id="proyectos" aria-labelledby="lbl-proyectos">
-        <p class="section-label" id="lbl-proyectos" aria-hidden="true">Proyectos</p>
-        <div class="project-list">
-
-          <!-- WhatsApp IA — featured -->
-          <article class="project-card featured">
-            <div class="project-header">
-              <h3>Automatización de pedidos por WhatsApp con IA</h3>
-              <span class="project-date">Mayo 2025</span>
-            </div>
-            <p>
-              Backend que interpreta mensajes de WhatsApp con GPT-4o, registra pedidos
-              automáticamente y gestiona su ciclo de vida completo. Incluye panel admin
-              con JWT, webhooks validados con HMAC-SHA256 y deploy en Railway.
-            </p>
-            <ul class="tech-stack" aria-label="Stack">
-              <li>Python 3.11</li>
-              <li>FastAPI</li>
-              <li>PostgreSQL</li>
-              <li>OpenAI GPT-4o</li>
-              <li>Meta Cloud API</li>
-              <li>Docker</li>
-              <li>Railway</li>
-            </ul>
-            <div class="project-links">
-              <a href="https://github.com/SebastianRamirez1/proyecto_whatsapp_automatizacion" target="_blank" rel="noopener noreferrer">Ver código →</a>
-              <a href="https://github.com/SebastianRamirez1/proyecto_whatsapp_automatizacion#readme" target="_blank" rel="noopener noreferrer">README</a>
-            </div>
-          </article>
-
-
-          <!-- ITM Bienestar -->
-          <article class="project-card">
-            <div class="project-header">
-              <h3>Portal de Bienestar ITM — API + Frontend</h3>
-              <span class="project-date">Mayo 2025</span>
-            </div>
-            <p>
-              API centralizada para servicios de bienestar del ITM: cafetería, salud mental,
-              biblioteca y eventos. 7 módulos, 140+ tests con Vitest, caché con Redis,
-              autenticación dual (JWT + API Keys) y CI/CD completo.
-            </p>
-            <ul class="tech-stack" aria-label="Stack">
-              <li>Node.js 20</li>
-              <li>Fastify 5</li>
-              <li>TypeScript</li>
-              <li>PostgreSQL</li>
-              <li>Redis</li>
-              <li>React 18</li>
-              <li>Railway / Vercel</li>
-            </ul>
-            <div class="project-links">
-              <a href="https://proyecto-itm-bienestar-frontend.vercel.app/login" target="_blank" rel="noopener noreferrer">Ver demo →</a>
-              <a href="https://github.com/SebastianRamirez1/proyecto_itm_bienestar" target="_blank" rel="noopener noreferrer">Ver API</a>
-              <a href="https://github.com/SebastianRamirez1/proyecto_itm_bienestar_frontend" target="_blank" rel="noopener noreferrer">Ver Frontend</a>
-            </div>
-          </article>
-
-          <!-- Turnos médicos -->
-          <article class="project-card">
-            <div class="project-header">
-              <h3>API REST de Turnos Médicos — Clean Architecture</h3>
-              <span class="project-date">Marzo 2025</span>
-            </div>
-            <p>
-              Sistema de gestión de citas médicas con arquitectura limpia en 4 capas,
-              reglas de negocio validadas, documentación automática con Swagger y
-              pipeline CI/CD con GitHub Actions y deploy en Vercel.
-            </p>
-            <ul class="tech-stack" aria-label="Stack">
-              <li>Java 17</li>
-              <li>Spring Boot 3.3</li>
-              <li>PostgreSQL 16</li>
-              <li>OpenAPI / Swagger</li>
-              <li>Docker</li>
-              <li>GitHub Actions</li>
-              <li>Vercel</li>
-            </ul>
-            <div class="project-links">
-              <a href="https://proyecto-turnos-medicos.vercel.app/" target="_blank" rel="noopener noreferrer">Ver demo →</a>
-              <a href="https://github.com/SebastianRamirez1/proyecto_turnos_medicos" target="_blank" rel="noopener noreferrer">Ver código</a>
-              <a href="https://github.com/SebastianRamirez1/proyecto_turnos_medicos#readme" target="_blank" rel="noopener noreferrer">README</a>
-            </div>
-          </article>
-
-          <!-- Distribuidora -->
-          <article class="project-card">
-            <div class="project-header">
-              <h3>Sistema de Gestión para Distribuidora</h3>
-              <span class="project-date">Enero 2025</span>
-            </div>
-            <p>
-              Backend con lógica de negocio real: ventas, inventario en tiempo real,
-              precios dinámicos, cuentas corrientes y reportes de caja.
-              BigDecimal para precisión monetaria y pruebas unitarias con JUnit 5 y Mockito.
-            </p>
-            <ul class="tech-stack" aria-label="Stack">
-              <li>Java 17</li>
-              <li>Spring Boot 3.2</li>
-              <li>PostgreSQL 15</li>
-              <li>JUnit 5</li>
-              <li>Mockito</li>
-              <li>Docker</li>
-              <li>Maven</li>
-            </ul>
-            <div class="project-links">
-              <a href="https://github.com/SebastianRamirez1/proyecto_distribuidora" target="_blank" rel="noopener noreferrer">Ver código →</a>
-              <a href="https://github.com/SebastianRamirez1/proyecto_distribuidora#readme" target="_blank" rel="noopener noreferrer">README</a>
-            </div>
-          </article>
-
-
-        </div>
-      </section>
-
-      <!-- Stack -->
-      <section class="section" id="stack" aria-labelledby="lbl-stack">
-        <p class="section-label" id="lbl-stack" aria-hidden="true">Stack</p>
-        <div class="stack-grid">
-          <div class="stack-item">
-            <h3>Backend</h3>
-            <ul class="stack-tags">
-              <li>Java 17</li>
-              <li>Spring Boot 3</li>
-              <li>Python 3.11</li>
-              <li>FastAPI</li>
-              <li>Node.js 20</li>
-              <li>Fastify 5</li>
-              <li>TypeScript</li>
-            </ul>
-          </div>
-          <div class="stack-item">
-            <h3>Bases de datos</h3>
-            <ul class="stack-tags">
-              <li>PostgreSQL</li>
-              <li>MySQL</li>
-              <li>Redis</li>
-              <li>Prisma ORM</li>
-              <li>Alembic</li>
-              <li>JDBC</li>
-            </ul>
-          </div>
-          <div class="stack-item">
-            <h3>Testing y DevOps</h3>
-            <ul class="stack-tags">
-              <li>JUnit 5</li>
-              <li>Mockito</li>
-              <li>pytest</li>
-              <li>Vitest</li>
-              <li>Docker</li>
-              <li>GitHub Actions</li>
-              <li>Railway</li>
-              <li>Render</li>
-            </ul>
-          </div>
-          <div class="stack-item">
-            <h3>Integraciones</h3>
-            <ul class="stack-tags">
-              <li>OpenAI API</li>
-              <li>Meta Cloud API</li>
-              <li>JWT</li>
-              <li>HMAC-SHA256</li>
-              <li>Swagger / OpenAPI</li>
-              <li>Zod</li>
-              <li>Git</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- Experience -->
-      <section class="section" id="experiencia" aria-labelledby="lbl-exp">
-        <p class="section-label" id="lbl-exp" aria-hidden="true">Experiencia y formación</p>
-        <div class="timeline">
-
-          <div class="timeline-entry">
-            <span class="t-date">Dic 2024 – Jun 2025</span>
-            <div class="t-body">
-              <h3>Desarrollador en Práctica</h3>
-              <p class="t-org">Federación Antioqueña de ONG · Medellín</p>
-              <p>
-                Desarrollo y mantenimiento de aplicaciones internas en un entorno colaborativo.
-                Backend, frontend, documentación técnica y pruebas de software. Trabajo con
-                Git, revisiones de código y comunicación directa con el equipo de desarrollo.
-              </p>
-            </div>
-          </div>
-
-          <div class="timeline-entry">
-            <span class="t-date">En curso</span>
-            <div class="t-body">
-              <h3>Ingeniería en Desarrollo de Software</h3>
-              <p class="t-org">ITM · Instituto Tecnológico Metropolitano</p>
-              <p>
-                Formación en ingeniería de software con énfasis en análisis, diseño de
-                sistemas y desarrollo backend.
-              </p>
-            </div>
-          </div>
-
-          <div class="timeline-entry">
-            <span class="t-date">2023 – Jun 2025</span>
-            <div class="t-body">
-              <h3>Tecnólogo en Análisis y Desarrollo de Software</h3>
-              <p class="t-org">SENA / ITM</p>
-              <p>
-                Formación técnica complementada con Spring Boot, JPA, PostgreSQL, Docker
-                y pruebas unitarias mediante cursos especializados y proyectos propios.
-              </p>
-            </div>
-          </div>
-
+      <!-- Accesos a las secciones -->
+      <section class="section" aria-labelledby="lbl-explorar">
+        <p class="section-label" id="lbl-explorar">Explorar</p>
+        <div class="explore-grid">
+          <a class="explore-card" href="sobre-mi.html">
+            <h3>Sobre mí <span class="arrow" aria-hidden="true">→</span></h3>
+            <p>Quién soy, mi formación y las especialidades en las que trabajo.</p>
+          </a>
+          <a class="explore-card" href="proyectos.html">
+            <h3>Proyectos <span class="arrow" aria-hidden="true">→</span></h3>
+            <p>Cuatro proyectos reales con IA, APIs REST y Clean Architecture.</p>
+          </a>
+          <a class="explore-card" href="stack.html">
+            <h3>Stack <span class="arrow" aria-hidden="true">→</span></h3>
+            <p>Lenguajes, frameworks, bases de datos y herramientas que uso.</p>
+          </a>
+          <a class="explore-card" href="experiencia.html">
+            <h3>Experiencia <span class="arrow" aria-hidden="true">→</span></h3>
+            <p>Mi trayectoria profesional y formación en desarrollo de software.</p>
+          </a>
+          <a class="explore-card" href="contacto.html">
+            <h3>Contacto <span class="arrow" aria-hidden="true">→</span></h3>
+            <p>Hablemos: correo, teléfono y redes para trabajar juntos.</p>
+          </a>
         </div>
       </section>
 
     </main>
 
     <!-- ── Footer ─────────────────────────────── -->
-    <footer class="site-footer" id="contacto" aria-label="Contacto">
-      <h2>Hablemos</h2>
-      <p class="footer-sub">
-        Disponible para roles junior en backend — presencial o remoto desde Medellín.
-      </p>
-      <nav class="footer-links" aria-label="Links de contacto">
-        <a href="mailto:sebastianacevedo123.sra@gmail.com">sebastianacevedo123.sra@gmail.com</a>
-        <a href="tel:+573002791360">+57 300 279 1360</a>
-        <a href="https://github.com/SebastianRamirez1" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://www.linkedin.com/in/sebastian-ramirez-acevedo-2580ab2a5/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="./assets/Sebastian-Ramirez-CV.pdf" target="_blank" rel="noopener noreferrer">Hoja de vida PDF</a>
-      </nav>
-      <p class="footer-copy">© <span id="year"></span> Sebastián Ramírez · Desarrollador Backend.</p>
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <nav class="footer-links" aria-label="Enlaces de contacto">
+          <a href="mailto:sebastianacevedo123.sra@gmail.com">Email</a>
+          <a href="tel:+573002791360">Teléfono</a>
+          <a href="https://github.com/SebastianRamirez1" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/sebastian-ramirez-acevedo-2580ab2a5/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </nav>
+        <p class="footer-copy">© <span id="year"></span> Sebastián Ramírez · Desarrollador Backend</p>
+      </div>
     </footer>
 
     <script src="./script.js"></script>

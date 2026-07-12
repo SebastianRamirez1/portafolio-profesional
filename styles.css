@@ -141,8 +141,25 @@ button:focus-visible {
 }
 
 .site-nav a:hover,
-.site-nav a.is-active {
+.site-nav a.is-active,
+.site-nav a[aria-current="page"] {
   color: var(--text);
+}
+
+/* Subrayado sutil para la página actual */
+.site-nav a[aria-current="page"] {
+  position: relative;
+}
+
+.site-nav a[aria-current="page"]::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 6px;
+  height: 2px;
+  background: var(--accent);
+  border-radius: 2px;
 }
 
 /* ── Profile section ─────────────────────── */
@@ -509,32 +526,26 @@ button:focus-visible {
   line-height: 1.7;
 }
 
-/* ── Footer ──────────────────────────────── */
+/* ── Footer (slim, compartido en todas las páginas) ── */
 .site-footer {
   border-top: 1px solid var(--border);
-  padding: 44px 24px 40px;
-  width: min(var(--max-w), 100%);
-  margin: 0 auto;
+  margin-top: 24px;
 }
 
-.site-footer h2 {
-  font-size: 1.4rem;
-  font-weight: 700;
-  margin-bottom: 8px;
-  letter-spacing: -0.02em;
-}
-
-.footer-sub {
-  color: var(--muted);
-  font-size: 0.97rem;
-  margin-bottom: 24px;
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px 20px;
+  padding-top: 28px;
+  padding-bottom: 32px;
 }
 
 .footer-links {
   display: flex;
   flex-wrap: wrap;
   gap: 6px 20px;
-  margin-bottom: 28px;
 }
 
 .footer-links a {
@@ -550,8 +561,148 @@ button:focus-visible {
 .footer-copy {
   font-size: 0.85rem;
   color: var(--muted);
-  padding-top: 20px;
-  border-top: 1px solid var(--border);
+}
+
+/* ── Plantilla de página (sub-páginas) ───── */
+.page {
+  padding: 48px 0 8px;
+}
+
+.page-eyebrow {
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin-bottom: 12px;
+}
+
+.page-lead {
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  max-width: 62ch;
+  margin-bottom: 36px;
+}
+
+.page-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 44px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-top: 40px;
+  transition: color 120ms;
+}
+
+.page-back:hover {
+  color: var(--accent);
+}
+
+/* ── Home: presentación breve + accesos ──── */
+.home-intro {
+  padding: 8px 0 4px;
+}
+
+.home-intro .bio {
+  margin-bottom: 0;
+}
+
+.explore-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.explore-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px 22px;
+  transition: border-color 150ms, transform 150ms;
+}
+
+.explore-card:hover {
+  border-color: rgba(94, 231, 255, 0.35);
+  transform: translateY(-2px);
+}
+
+.explore-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.explore-card h3 .arrow {
+  color: var(--accent);
+  transition: transform 150ms;
+}
+
+.explore-card:hover h3 .arrow {
+  transform: translateX(3px);
+}
+
+.explore-card p {
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* ── Página de contacto ──────────────────── */
+.contact-methods {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  transition: border-color 150ms;
+}
+
+.contact-card:hover {
+  border-color: rgba(94, 231, 255, 0.35);
+}
+
+.contact-card .label {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+.contact-card .value {
+  font-size: 0.98rem;
+  color: var(--text);
+  font-weight: 600;
+  word-break: break-word;
+}
+
+.contact-card:hover .value {
+  color: var(--accent);
 }
 
 /* ── Animations ──────────────────────────── */
@@ -624,6 +775,19 @@ button:focus-visible {
   .stack-grid {
     grid-template-columns: 1fr;
     gap: 20px;
+  }
+
+  .explore-grid,
+  .contact-methods {
+    grid-template-columns: 1fr;
+  }
+
+  .page-title {
+    font-size: 1.7rem;
+  }
+
+  .footer-inner {
+    justify-content: flex-start;
   }
 
   .timeline-entry {
