@@ -2,9 +2,9 @@
 
 # Hola, soy Sebastián Ramírez 👋
 
-**Desarrollador Backend · Java · Python · Node.js**
+**Desarrollador Full-Stack · Java · Python · Node.js · React · IA aplicada**
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-portafolio-profesional-cyan.vercel.app-5ee7ff?style=for-the-badge&logo=netlify&logoColor=white)](https://portafolio-profesional-cyan.vercel.app/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-portafolio--profesional--cyan.vercel.app-5ee7ff?style=for-the-badge&logo=vercel&logoColor=white)](https://portafolio-profesional-cyan.vercel.app/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-sebastian--ramirez--acevedo-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sebastian-ramirez-acevedo-2580ab2a5/)
 [![Email](https://img.shields.io/badge/Email-sebastianacevedo123.sra%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sebastianacevedo123.sra@gmail.com)
 
@@ -14,11 +14,11 @@
 
 ## 👨‍💻 Sobre mí
 
-Desarrollador backend con **6 meses de práctica profesional** en la Federación Antioqueña de ONG y **4 proyectos propios** publicados en GitHub. Construyo APIs REST, integro IA en flujos reales de negocio, aplico Clean Architecture y entrego código con pruebas y CI/CD.
+Desarrollador full-stack con **sistemas en producción**: uno opera a diario las ventas, el inventario y la caja de una distribuidora real. Tengo **6 meses de práctica profesional** en la Federación Antioqueña de ONG y **4 proyectos propios** en GitHub. Construyo APIs REST en tres stacks y frontends en React, integro IA en flujos de negocio y entrego código con pruebas y CI/CD.
 
 - 🏙️ Medellín / Bello, Colombia — disponible presencial o remoto
-- 🎓 Estudiante de **Ingeniería en Desarrollo de Software** · ITM
-- 🔍 Buscando mi primer rol junior en backend — **disponible ahora**
+- 🎓 Estudiante de **Tecnología en Desarrollo de Software** · ITM (articulada con Ingeniería)
+- 🔍 **Abierto a roles full-stack** — **disponible ahora**
 - 🤖 Interesado en IA aplicada, APIs REST y arquitectura limpia
 - 📄 [Ver mi hoja de vida](https://portafolio-profesional-cyan.vercel.app/assets/Sebastian-Ramirez-CV.pdf)
 
@@ -116,10 +116,10 @@ Desarrollador backend con **6 meses de práctica profesional** en la Federación
 
 ## 🌱 Actualmente
 
-- 🏢 Terminando mi práctica en **Federación Antioqueña de ONG** (Dic 2024 – Jun 2025)
-- 🎓 Completando **Ingeniería en Desarrollo de Software** en el ITM
+- 🏢 Práctica profesional en **Federación Antioqueña de ONG** (Dic 2024 – Jun 2025)
+- 🎓 Cursando **Tecnología en Desarrollo de Software** en el ITM (6.º semestre, articulada con Ingeniería)
 - 🔭 Construyendo proyectos con IA aplicada a problemas reales de negocio
-- 💼 **Abierto a oportunidades** de trabajo como Desarrollador Backend Junior
+- 💼 **Abierto a oportunidades** como Desarrollador Full-Stack
 
 ---
 
@@ -127,7 +127,7 @@ Desarrollador backend con **6 meses de práctica profesional** en la Federación
 
 <div align="center">
 
-[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-portafolio-profesional-cyan.vercel.app-5ee7ff?style=for-the-badge)](https://portafolio-profesional-cyan.vercel.app/)
+[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-portafolio--profesional--cyan.vercel.app-5ee7ff?style=for-the-badge)](https://portafolio-profesional-cyan.vercel.app/)
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sebastian-ramirez-acevedo-2580ab2a5/)
 [![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sebastianacevedo123.sra@gmail.com)
@@ -139,6 +139,6 @@ Desarrollador backend con **6 meses de práctica profesional** en la Federación
 
 <div align="center">
 
-*Desarrollador backend construyendo soluciones reales con Java, Python y Node.js · Medellín, Colombia*
+*Desarrollador full-stack construyendo soluciones reales con Java, Python, Node.js y React · Medellín, Colombia*
 
 </div>

@@ -410,6 +410,31 @@ button:focus-visible {
   flex-shrink: 0;
 }
 
+.prod-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  white-space: nowrap;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--green);
+  background: rgba(74, 222, 128, 0.12);
+  border: 1px solid rgba(74, 222, 128, 0.35);
+}
+
+.prod-badge .dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--green);
+  box-shadow: 0 0 0 3px rgba(74, 222, 128, 0.2);
+}
+
 .project-card p {
   color: var(--muted);
   font-size: 0.95rem;
@@ -567,6 +592,21 @@ button:focus-visible {
   font-size: 1rem;
   font-weight: 700;
   margin-bottom: 3px;
+}
+
+.t-tag {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 9px;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  vertical-align: middle;
 }
 
 .t-org {

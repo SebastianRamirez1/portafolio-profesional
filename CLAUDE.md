@@ -5,13 +5,15 @@ ingeniería está en [`docs/DIRECTRICES_INGENIERIA.md`](docs/DIRECTRICES_INGENIE
 
 ## Qué es este proyecto
 
-Portafolio profesional **estático**: HTML + CSS + JS vanilla, sin framework ni build step.
-Desplegado en Netlify → https://portafolio-profesional-cyan.vercel.app/
+Portafolio profesional **estático y multipágina** de un desarrollador **full-stack**:
+HTML + CSS + JS vanilla, sin framework ni build step. Desplegado en Vercel →
+https://portafolio-profesional-cyan.vercel.app/
 
-- `index.html` — página única, una sola columna
+- `index.html` — inicio (hero, estadísticas, resumen, accesos)
+- `sobre-mi.html` · `proyectos.html` · `stack.html` · `experiencia.html` · `contacto.html` — una página por sección; header/footer compartidos, nav activo por `aria-current="page"`
 - `styles.css` — design system con variables CSS (tema oscuro tipo hectorvent.dev)
-- `script.js` — año dinámico + scroll spy de navegación
-- `assets/` — foto, favicon, OG cover, CV en PDF
+- `script.js` — año dinámico en el footer
+- `assets/` — foto (jpg), favicon, OG cover (png), CV en PDF
 - `docs/` — base de conocimiento de ingeniería
 
 ## Reglas duras (siempre)
