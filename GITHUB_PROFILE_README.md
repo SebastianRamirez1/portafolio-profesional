@@ -26,22 +26,20 @@ Desarrollador full-stack con **sistemas en producción**: uno opera a diario las
 
 ## 🚀 Proyecto destacado
 
-### 🤖 Automatización de pedidos por WhatsApp con IA
+### 🥚 Sistema de Gestión para Distribuidora — 🟢 EN PRODUCCIÓN
 
-> Backend que elimina la gestión manual de pedidos para negocios que reciben órdenes por WhatsApp. La IA interpreta los mensajes, registra los pedidos y envía confirmaciones automáticamente.
+> Sistema que opera **a diario** las ventas, el inventario, las cuentas de crédito y la caja de una distribuidora real en Antioquia que mueve **500–700 canastas diarias (picos de 900)**.
 
-[![GitHub](https://img.shields.io/badge/Código-GitHub-181717?style=flat-square&logo=github)](https://github.com/SebastianRamirez1/proyecto_whatsapp_automatizacion)
-[![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=flat-square&logo=python&logoColor=white)](https://github.com/SebastianRamirez1/proyecto_whatsapp_automatizacion)
-[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)](https://github.com/SebastianRamirez1/proyecto_whatsapp_automatizacion)
-[![OpenAI](https://img.shields.io/badge/OpenAI_GPT--4o-412991?style=flat-square&logo=openai&logoColor=white)](https://github.com/SebastianRamirez1/proyecto_whatsapp_automatizacion)
-[![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)](https://github.com/SebastianRamirez1/proyecto_whatsapp_automatizacion)
-[![Railway](https://img.shields.io/badge/Railway-0B0D0E?style=flat-square&logo=railway&logoColor=white)](https://github.com/SebastianRamirez1/proyecto_whatsapp_automatizacion)
+[![GitHub](https://img.shields.io/badge/Código-GitHub-181717?style=flat-square&logo=github)](https://github.com/SebastianRamirez1/proyecto_distribuidora)
+[![Java](https://img.shields.io/badge/Java_17-ED8B00?style=flat-square&logo=openjdk&logoColor=white)](https://github.com/SebastianRamirez1/proyecto_distribuidora)
+[![Spring Boot](https://img.shields.io/badge/Spring_Boot_3.2-6DB33F?style=flat-square&logo=springboot&logoColor=white)](https://github.com/SebastianRamirez1/proyecto_distribuidora)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)](https://github.com/SebastianRamirez1/proyecto_distribuidora)
+[![JUnit 5](https://img.shields.io/badge/JUnit_5-25A162?style=flat-square&logo=junit5&logoColor=white)](https://github.com/SebastianRamirez1/proyecto_distribuidora)
 
 **Lo que hace:**
-- Interpreta mensajes de WhatsApp con GPT-4o y extrae pedidos automáticamente
-- Máquina de estados: recibido → confirmado → preparación → despachado → entregado
-- API de administración con JWT, filtros y estadísticas de dashboard
-- Webhooks validados con HMAC-SHA256 · Pruebas end-to-end · Deploy en Railway
+- Ventas, inventario en tiempo real, precios dinámicos, cuentas de crédito y reportes de caja
+- **BigDecimal** para precisión monetaria + **DDD** (value objects Dinero, Precio, Cantidad)
+- Rate limiting en el login · **173 pruebas** (JUnit 5 + Mockito) · 37 endpoints en 11 controladores
 
 ---
 
@@ -50,12 +48,13 @@ Desarrollador full-stack con **sistemas en producción**: uno opera a diario las
 | Categoría | Tecnologías |
 |-----------|------------|
 | **Backend** | Java 17, Spring Boot 3.x, Python 3.11, FastAPI, Node.js 20, Fastify 5, TypeScript |
+| **Frontend** | React 18, JavaScript, HTML5, CSS3 |
 | **Bases de datos** | PostgreSQL, MySQL, Redis, Prisma ORM, Alembic |
-| **Testing** | JUnit 5, Mockito, pytest, Vitest — 140+ tests en producción |
+| **Testing** | JUnit 5, Mockito, pytest, Vitest — 380+ pruebas automatizadas |
 | **DevOps** | Docker, GitHub Actions, Railway, Render, Vercel |
-| **Integraciones** | OpenAI API, Meta Cloud API, JWT, Webhooks HMAC-SHA256 |
+| **Integraciones** | OpenAI API (GPT-4o), Meta Cloud API, JWT, Webhooks HMAC-SHA256 |
 | **Herramientas** | Git, Maven, IntelliJ IDEA, VS Code, Postman, Swagger / OpenAPI |
-| **Conceptos** | Clean Architecture, REST, CI/CD, MVC, DDD, Autenticación |
+| **Conceptos** | Clean Architecture, DDD, REST, CI/CD, Autenticación |
 
 ---
 
@@ -63,7 +62,7 @@ Desarrollador full-stack con **sistemas en producción**: uno opera a diario las
 
 ### 🏥 Portal de Bienestar ITM — API + Frontend
 
-> API centralizada para los servicios de bienestar del ITM: cafetería, salud mental, biblioteca, eventos y alertas. 7 módulos, 140+ tests, CI/CD completo.
+> API centralizada para los servicios de bienestar del ITM: cafetería, salud mental, biblioteca, eventos y alertas. 8 módulos, 148 pruebas (Vitest), caché con Redis y CI/CD completo.
 
 [![API](https://img.shields.io/badge/Ver_API-GitHub-181717?style=flat-square&logo=github)](https://github.com/SebastianRamirez1/proyecto_itm_bienestar)
 [![Frontend](https://img.shields.io/badge/Ver_Frontend-GitHub-181717?style=flat-square&logo=github)](https://github.com/SebastianRamirez1/proyecto_itm_bienestar_frontend)
@@ -76,7 +75,7 @@ Desarrollador full-stack con **sistemas en producción**: uno opera a diario las
 
 ### 🏥 API REST de Turnos Médicos — Clean Architecture
 
-> Sistema de gestión de citas médicas con arquitectura limpia en 4 capas, CI/CD con GitHub Actions y documentación automática con Swagger.
+> Sistema de gestión de citas médicas con Clean Architecture en 4 capas, CI/CD con GitHub Actions y documentación automática con Swagger. 18 endpoints · 29 pruebas.
 
 [![Código](https://img.shields.io/badge/Ver_código-GitHub-181717?style=flat-square&logo=github)](https://github.com/SebastianRamirez1/proyecto_turnos_medicos)
 [![Java](https://img.shields.io/badge/Java_17-ED8B00?style=flat-square&logo=openjdk&logoColor=white)](https://github.com/SebastianRamirez1/proyecto_turnos_medicos)
@@ -85,14 +84,15 @@ Desarrollador full-stack con **sistemas en producción**: uno opera a diario las
 
 ---
 
-### 🥚 Sistema de Gestión para Distribuidora
+### 🤖 Automatización de pedidos por WhatsApp con IA
 
-> Backend con lógica de negocio real: ventas, inventario en tiempo real, precios dinámicos, cuentas corrientes y reportes de caja. DDD + BigDecimal para precisión monetaria.
+> Backend que interpreta mensajes de WhatsApp con GPT-4o y registra pedidos automáticamente. Máquina de estados, webhooks HMAC-SHA256 y panel admin con JWT. 9 endpoints · 37 pruebas.
 
-[![Código](https://img.shields.io/badge/Ver_código-GitHub-181717?style=flat-square&logo=github)](https://github.com/SebastianRamirez1/proyecto_distribuidora)
-[![Java](https://img.shields.io/badge/Java_17-ED8B00?style=flat-square&logo=openjdk&logoColor=white)](https://github.com/SebastianRamirez1/proyecto_distribuidora)
-[![Spring Boot](https://img.shields.io/badge/Spring_Boot_3.2-6DB33F?style=flat-square&logo=springboot&logoColor=white)](https://github.com/SebastianRamirez1/proyecto_distribuidora)
-[![JUnit 5](https://img.shields.io/badge/JUnit_5-25A162?style=flat-square&logo=junit5&logoColor=white)](https://github.com/SebastianRamirez1/proyecto_distribuidora)
+[![Código](https://img.shields.io/badge/Ver_código-GitHub-181717?style=flat-square&logo=github)](https://github.com/SebastianRamirez1/proyecto_whatsapp_automatizacion)
+[![Python](https://img.shields.io/badge/Python_3.11-3776AB?style=flat-square&logo=python&logoColor=white)](https://github.com/SebastianRamirez1/proyecto_whatsapp_automatizacion)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)](https://github.com/SebastianRamirez1/proyecto_whatsapp_automatizacion)
+[![OpenAI](https://img.shields.io/badge/OpenAI_GPT--4o-412991?style=flat-square&logo=openai&logoColor=white)](https://github.com/SebastianRamirez1/proyecto_whatsapp_automatizacion)
+[![Railway](https://img.shields.io/badge/Railway-0B0D0E?style=flat-square&logo=railway&logoColor=white)](https://github.com/SebastianRamirez1/proyecto_whatsapp_automatizacion)
 
 ---
 
