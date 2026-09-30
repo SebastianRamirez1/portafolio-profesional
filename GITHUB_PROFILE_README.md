@@ -5,7 +5,7 @@
 **Desarrollador Full-Stack · Java · Python · Node.js · React · IA aplicada**
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-portafolio--profesional--cyan.vercel.app-5ee7ff?style=for-the-badge&logo=vercel&logoColor=white)](https://portafolio-profesional-cyan.vercel.app/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-sebastian--ramirez--acevedo-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sebastian-ramirez-acevedo-2580ab2a5/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-sebastianramirezacevedo-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sebastianramirezacevedo/)
 [![Email](https://img.shields.io/badge/Email-sebastianacevedo123.sra%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sebastianacevedo123.sra@gmail.com)
 
 </div>
@@ -14,7 +14,7 @@
 
 ## 👨‍💻 Sobre mí
 
-Desarrollador full-stack con **sistemas en producción**: uno opera a diario las ventas, el inventario y la caja de una distribuidora real. Tengo **6 meses de práctica profesional** en la Federación Antioqueña de ONG y **4 proyectos propios** en GitHub. Construyo APIs REST en tres stacks y frontends en React, integro IA en flujos de negocio y entrego código con pruebas y CI/CD.
+Desarrollador full-stack. A solicitud de la distribuidora donde trabajo, construí un sistema completo de ventas, inventario, crédito y caja, listo para operar y validado como funcional por el dueño. Tengo **6 meses de práctica profesional** en la Federación Antioqueña de ONG y **4 proyectos propios** en GitHub. Construyo APIs REST en tres stacks y frontends en React, integro IA en flujos de negocio y entrego código con pruebas y CI/CD.
 
 - 🏙️ Medellín / Bello, Colombia — disponible presencial o remoto
 - 🎓 Estudiante de **Tecnología en Desarrollo de Software** · ITM (articulada con Ingeniería)
@@ -26,9 +26,9 @@ Desarrollador full-stack con **sistemas en producción**: uno opera a diario las
 
 ## 🚀 Proyecto destacado
 
-### 🥚 Sistema de Gestión para Distribuidora — 🟢 EN PRODUCCIÓN
+### 🥚 Sistema de Gestión para Distribuidora — 🟡 LISTO PARA OPERAR · IMPLEMENTACIÓN PENDIENTE
 
-> Sistema que opera **a diario** las ventas, el inventario, las cuentas de crédito y la caja de una distribuidora real en Antioquia que mueve **500–700 canastas diarias (picos de 900)**.
+> Sistema completo de ventas, inventario, crédito y caja, construido a solicitud de la distribuidora de huevo donde trabajo, diseñado para una operación de **500–700 canastas diarias (picos de 900)**. Está listo para operar y el dueño lo validó como funcional; su implementación depende de su decisión.
 
 [![GitHub](https://img.shields.io/badge/Código-GitHub-181717?style=flat-square&logo=github)](https://github.com/SebastianRamirez1/proyecto_distribuidora)
 [![Java](https://img.shields.io/badge/Java_17-ED8B00?style=flat-square&logo=openjdk&logoColor=white)](https://github.com/SebastianRamirez1/proyecto_distribuidora)
@@ -116,7 +116,8 @@ Desarrollador full-stack con **sistemas en producción**: uno opera a diario las
 
 ## 🌱 Actualmente
 
-- 🏢 Práctica profesional en **Federación Antioqueña de ONG** (Dic 2024 – Jun 2025)
+- 🏭 Auxiliar de bodega en La Golondrina, donde construí, a solicitud de la empresa, su sistema de gestión
+- ✅ Completé mi práctica profesional en **Federación Antioqueña de ONG** (Dic 2024 – Jun 2025)
 - 🎓 Cursando **Tecnología en Desarrollo de Software** en el ITM (6.º semestre, articulada con Ingeniería)
 - 🔭 Construyendo proyectos con IA aplicada a problemas reales de negocio
 - 💼 **Abierto a oportunidades** como Desarrollador Full-Stack
@@ -129,7 +130,7 @@ Desarrollador full-stack con **sistemas en producción**: uno opera a diario las
 
 [![Portfolio](https://img.shields.io/badge/🌐_Portfolio-portafolio--profesional--cyan.vercel.app-5ee7ff?style=for-the-badge)](https://portafolio-profesional-cyan.vercel.app/)
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sebastian-ramirez-acevedo-2580ab2a5/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sebastianramirezacevedo/)
 [![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sebastianacevedo123.sra@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SebastianRamirez1)
 

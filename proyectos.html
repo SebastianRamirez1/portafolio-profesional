@@ -6,7 +6,7 @@
     <title>Proyectos | Sebastián Ramírez</title>
     <meta
       name="description"
-      content="Proyectos de Sebastián Ramírez: sistema de gestión para distribuidora en producción, automatización de pedidos por WhatsApp con IA (GPT-4o), portal de bienestar ITM y API de turnos médicos con Clean Architecture."
+      content="Proyectos de Sebastián Ramírez: sistema de gestión para distribuidora listo para operar, automatización de pedidos por WhatsApp con IA (GPT-4o), portal de bienestar ITM y API de turnos médicos con Clean Architecture."
     />
     <meta name="author" content="Sebastián Ramírez" />
     <meta name="theme-color" content="#1d1e20" />
@@ -50,23 +50,23 @@
           <p class="page-eyebrow">Proyectos</p>
           <h1 class="page-title">Proyectos que he construido</h1>
           <p class="page-lead">
-            Cuatro proyectos reales —uno operando en producción en una empresa— con APIs REST
+            Cuatro proyectos reales —uno construido a solicitud de una empresa y listo para operar— con APIs REST
             en Java, Python y Node.js, frontends en React, IA aplicada, pruebas automatizadas y CI/CD.
           </p>
 
           <div class="project-list">
 
-            <!-- Distribuidora — en producción, destacado -->
+            <!-- Distribuidora — listo para operar, destacado -->
             <article class="project-card featured">
               <div class="project-header">
                 <h3>Sistema de Gestión para Distribuidora</h3>
-                <span class="prod-badge"><span class="dot" aria-hidden="true"></span>En producción</span>
+                <span class="prod-badge"><span class="dot" aria-hidden="true"></span>Listo para operar</span>
               </div>
               <p>
-                Sistema que opera <strong>a diario</strong> las ventas, el inventario en tiempo real,
-                los precios dinámicos, las cuentas de crédito y los reportes de caja de una
-                distribuidora real en Antioquia que mueve
-                <strong>500–700 canastas diarias, con picos de 900</strong>.
+                Sistema completo de ventas, inventario, crédito y caja, construido a solicitud de la
+                distribuidora de huevo donde trabajo, diseñado para una operación de
+                <strong>500–700 canastas diarias (picos de 900)</strong>. Está listo para operar y
+                el dueño lo validó como funcional; su implementación depende de su decisión.
               </p>
               <div class="shots" aria-label="Capturas del proyecto">
                 <button class="shot" type="button" data-full="./assets/screenshots/distribuidora-2.jpg"><img src="./assets/screenshots/thumbs/distribuidora-2.jpg" alt="La Golondrina — dashboard con stock y caja del día" loading="lazy" width="600" height="300" /></button>
@@ -87,9 +87,9 @@
               <details class="case-study">
                 <summary>Ver detalles técnicos</summary>
                 <div class="case-body">
-                  <p><span class="cs-label">Problema</span> Una distribuidora que mueve cientos de canastas al día gestionaba ventas, inventario, crédito y caja de forma manual: necesitaba precisión monetaria exacta y trazabilidad de cada movimiento.</p>
+                  <p><span class="cs-label">Problema</span> Una distribuidora que mueve cientos de canastas al día gestiona ventas, inventario, crédito y caja en cuadernos: necesita precisión monetaria exacta y trazabilidad de cada movimiento.</p>
                   <p><span class="cs-label">Decisión técnica clave</span> Usé BigDecimal en lugar de double para todos los cálculos de dinero y evitar errores de redondeo en precios y saldos, y modelé el dominio con DDD (value objects Dinero, Precio, Cantidad) para reflejar las reglas reales del negocio.</p>
-                  <p><span class="cs-label">Destacado</span> En producción operando 500–700 canastas diarias (picos de 900): inventario en tiempo real, precios dinámicos, cuentas de crédito y reportes de caja, con límite de intentos de login.</p>
+                  <p><span class="cs-label">Destacado</span> Diseñado para una operación de 500–700 canastas diarias (picos de 900): inventario en tiempo real, precios dinámicos, cuentas de crédito y reportes de caja, con límite de intentos de login.</p>
                   <p><span class="cs-label">En números</span> 173 pruebas (JUnit 5 + Mockito) · 37 endpoints en 11 controladores · value objects para el dinero.</p>
                 </div>
               </details>
@@ -237,7 +237,7 @@
           <a href="mailto:sebastianacevedo123.sra@gmail.com">Email</a>
           <a href="tel:+573002791360">Teléfono</a>
           <a href="https://github.com/SebastianRamirez1" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/sebastian-ramirez-acevedo-2580ab2a5/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/sebastianramirezacevedo/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </nav>
         <p class="footer-copy">© <span id="year"></span> Sebastián Ramírez · Desarrollador Full-Stack</p>
       </div>

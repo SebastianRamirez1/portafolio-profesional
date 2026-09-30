@@ -1,6 +1,6 @@
 # Portafolio profesional
 
-Sitio estático de **Sebastián Ramírez**, desarrollador full-stack (Java · Python · Node.js · React · IA aplicada) con proyectos reales, uno de ellos en producción.
+Sitio estático de **Sebastián Ramírez**, desarrollador full-stack (Java · Python · Node.js · React · IA aplicada) con proyectos reales, entre ellos un sistema de gestión listo para operar, construido a solicitud de la distribuidora donde trabajo.
 
 🔗 https://portafolio-profesional-cyan.vercel.app/
 
